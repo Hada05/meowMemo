@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="412.0" styleClass="background-fit-transparent" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ambameow.meowmemo.diaryEntryController">
+   <children>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="412.0" spacing="16.0" styleClass="background-fit-border" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="moodImageView" fitHeight="150.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" styleClass="shadowthing">
+               <image>
+                  <Image url="@image/mood/keren.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="titleLabel" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Judul" wrappingWidth="260.0">
+               <styleClass>
+                  <String fx:value="shadowthing" />
+                  <String fx:value="text-rawr" />
+               </styleClass>
+            </Text>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <MenuButton layoutX="42.0" layoutY="20.0" mnemonicParsing="false" styleClass="menu-item" AnchorPane.rightAnchor="16.0">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#openDiary" text="Buka" />
+                      <MenuItem fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteDiary" text="Hapus" />
+                    </items>
+                  </MenuButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+   </padding>
+</HBox>

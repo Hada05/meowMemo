@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane alignment="CENTER_LEFT" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: transparent;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ambameow.meowmemo.exitController">
+   <children>
+      <ImageView fitHeight="258.0" fitWidth="525.0" pickOnBounds="true" preserveRatio="true" styleClass="shadowthing">
+         <image>
+            <Image url="@image/popup.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="300.0" prefWidth="175.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="342.0">
+               <children>
+                  <Label id="label-exit" styleClass="text-rawr" stylesheets="@styles.css" text="Yakin Meow Keluar?" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="423.0" spacing="70.0" stylesheets="@styles.css">
+                     <children>
+                        <Button id="yes-btn" mnemonicParsing="false" onAction="#yes" prefWidth="70.0" style="-fx-font-size: 16px; -fx-stroke-width: 1px; -fx-text-fill: #492906;" styleClass="button-no" stylesheets="@styles.css" text="Ya" />
+                        <Button id="no-btn" mnemonicParsing="false" onAction="#no" prefWidth="70.0" styleClass="button-yes" stylesheets="@styles.css" text="Tidak" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <StackPane.margin>
+            <Insets top="50.0" />
+         </StackPane.margin>
+      </HBox>
+   </children>
+</StackPane>

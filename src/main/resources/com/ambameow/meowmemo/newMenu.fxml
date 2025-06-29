@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" styleClass="background-fit" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ambameow.meowmemo.newMenuController">
+   <children>
+      <VBox layoutX="8.0" layoutY="54.0" prefHeight="400.0" prefWidth="600.0" spacing="8.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goBack" styleClass="button-newMenu" text="Kembali" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="8.0" />
+               </children>
+            </AnchorPane>
+            <HBox alignment="TOP_CENTER" prefHeight="332.0" prefWidth="534.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="320.0" prefWidth="100.0" spacing="20.0" styleClass="background-newMenuBack" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" styleClass="shadowthing" VBox.vgrow="ALWAYS">
+                           <image>
+                              <Image url="@image/mood.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="moodImage" fitHeight="81.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true" styleClass="shadowthing" VBox.vgrow="ALWAYS">
+                           <image>
+                              <Image url="@image/mood/computer.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="24.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" styleClass="shadowthing" VBox.vgrow="ALWAYS">
+                           <image>
+                              <Image url="@image/pawsitivity.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="pawsitivityImage" fitHeight="96.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" styleClass="shadowthing" VBox.vgrow="ALWAYS">
+                           <image>
+                              <Image url="@image/pawsitivity/tujuh.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="350.0" prefWidth="600.0" styleClass="background-newMenu" HBox.hgrow="ALWAYS">
+                     <children>
+                        <AnchorPane prefHeight="30.0" prefWidth="600.0">
+                           <children>
+                              <TextField fx:id="textJudul" layoutX="-8.0" layoutY="2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="76.0" promptText="Judul..." styleClass="text-field-Judul" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="60.0" />
+                           </children>
+                        </AnchorPane>
+                        <TextArea fx:id="textIsi" prefHeight="250.0" prefWidth="600.0" style="-fx-font-size: 16pt; -fx-font-family: Poppins;" styleClass="background-journal" wrapText="true" VBox.vgrow="ALWAYS" />
+                        <AnchorPane prefHeight="20.0" prefWidth="600.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#goSave" styleClass="button-newMenu" text="Simpan" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="4.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="36.0" left="16.0" right="16.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
